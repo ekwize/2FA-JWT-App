@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Sergey Ulanov <ulanovsega@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^5.0.4"
+djangorestframework = "^3.15.1"
+python-dotenv = "^1.0.1"
+django-cors-headers = "^4.3.1"
+djangorestframework-simplejwt = "^5.3.1"
+psycopg2-binary = "^2.9.9"
+celery = "^5.4.0"
+redis = "^5.0.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
