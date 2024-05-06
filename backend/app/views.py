@@ -36,7 +36,6 @@ class SendVerificationEmail(APIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
-        print(request.data)
         serializer = UIDSerializer(data=request.data)
 
         if serializer.is_valid(raise_exception=True):

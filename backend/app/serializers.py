@@ -38,7 +38,6 @@ class UIDSerializer(serializers.Serializer):
     uid = serializers.CharField(required=True, allow_blank=False)
 
     def validate(self, data):
-        print(data)
         try:
             user = User.objects.get(id=data["uid"])
         except User.DoesNotExist:
