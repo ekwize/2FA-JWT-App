@@ -26,7 +26,7 @@ Simple JWT authentication app with 2-step verification
 ## Deployment
 1) Rename `.env.dist` to `.env` and configure it
   
-2) Run `docker compose up --build`
+2) Run `docker-compose up --build`
 
 
  There should now be two servers running:
